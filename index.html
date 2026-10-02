@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Rescue your kidnapped friend, outsmart a Dark Sorceress and solve over 100 spellbinding puzzles.">
+  <meta name="theme-color" content="#130c23">
+  <title>Witch &amp; Wizard | PC Puzzle Adventure</title>
+  <link rel="icon" type="image/png" href="img/illustration_standard_edition.png">
+  <link rel="canonical" href="/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Witch &amp; Wizard">
+  <meta property="og:url" content="https://playwitchandwizard.github.io/">
+  <meta property="og:title" content="Witch &amp; Wizard | PC Puzzle Adventure">
+  <meta property="og:description"
+    content="Rescue your kidnapped friend, outsmart a Dark Sorceress and solve over 100 spellbinding puzzles.">
+  <meta property="og:image"
+    content="https://playwitchandwizard.github.io/img/og_image.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt"
+    content="Witch &amp; Wizard cover art featuring the young witch and wizard with the Dark Sorceress looming behind them">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Witch &amp; Wizard | PC Puzzle Adventure">
+  <meta name="twitter:description"
+    content="Rescue your kidnapped friend, outsmart a Dark Sorceress and solve over 100 spellbinding puzzles.">
+  <meta name="twitter:image"
+    content="https://playwitchandwizard.github.io/img/og_image.png">
+  <link rel="apple-touch-icon" href="img/illustration_standard_edition.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Sticky header (shrinks on scroll) -->
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#top" aria-label="Witch &amp; Wizard home">
+      <span>Witch &amp; Wizard</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#download">Play</a>
+      <a href="#story">Story</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+    <a class="header-cta" onclick="window.location.href='https://www.dropbox.com/scl/fi/69x9y7wzwkcep7cm7xsu7/Witch-Wizard.zip?rlkey=62aw8rmzwqv5e1y4zc9t39sqe&st=qwht3dm3&dl=1'" style="cursor: pointer;" tabindex="0"
+      role="link">Download Free <span aria-hidden="true">&rarr;</span></a>
+  </header>
+
+  <main id="main">
+
+    <!-- ══ HERO ══ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-bg-parallax" id="heroBgParallax"></div>
+      <!-- Decorative scattered characters -->
+      <img src="img/illustration_climb_ladder.png" aria-hidden="true" style="position:absolute;top:10%;left:2%;width:160px;transform:rotate(-8deg);pointer-events:none;z-index:2;opacity:0.92;">
+      <img src="img/illustration_ghost.png" aria-hidden="true" style="position:absolute;bottom:8%;left:2%;width:160px;transform:rotate(-12deg);pointer-events:none;z-index:2;opacity:0.92;">
+      <img src="img/illustration_snake.png" aria-hidden="true" style="position:absolute;top:10%;right:3%;width:160px;transform:rotate(10deg);pointer-events:none;z-index:2;opacity:0.92;">
+      <img src="img/illustration_climb_ladder.png" aria-hidden="true" style="position:absolute;bottom:8%;right:3%;width:160px;transform:rotate(8deg) scaleX(-1);pointer-events:none;z-index:2;opacity:0.92;">
+      <img src="img/illustration_snake.png" aria-hidden="true" style="position:absolute;top:42%;left:3%;width:140px;transform:rotate(15deg) scaleX(-1);pointer-events:none;z-index:2;opacity:0.88;">
+      <img src="img/illustration_ghost.png" aria-hidden="true" style="position:absolute;top:30%;left:50%;transform:translateX(-50%) rotate(-5deg) scaleX(-1);width:160px;pointer-events:none;z-index:2;opacity:0.75;">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Free to play &mdash; Available now on PC</p>
+        <h1 id="hero-title">
+          <span class="visually-hidden">Witch &amp; Wizard</span>
+          <img src="img/illustration_cabin.png" alt="" aria-hidden="true" style="max-width:480px;width:100%;display:block;margin:0 auto;">
+        </h1>
+        <p class="hero-lede">Rescue your kidnapped friend, outsmart a Dark Sorceress, and use magic to solve 100+
+          brain-melting puzzles. Play solo or team up with a friend in co-op.</p>
+        <div class="hero-actions">
+          <a class="button button-primary snd-btn" onclick="window.location.href='https://www.dropbox.com/scl/fi/69x9y7wzwkcep7cm7xsu7/Witch-Wizard.zip?rlkey=62aw8rmzwqv5e1y4zc9t39sqe&st=qwht3dm3&dl=1'"
+            style="cursor: pointer;" tabindex="0" role="link">Download Free <span aria-hidden="true">&rarr;</span></a>
+          <a class="button button-quiet snd-btn" href="#trailer" onclick="(function(e){e.preventDefault();openYTLightbox();})(event)">Watch trailer</a>
+        </div>
+        <p class="platform">Windows &nbsp;&bull;&nbsp; Controller &amp; Keyboard supported</p>
+      </div>
+      <div class="hero-art reveal" id="heroArt" aria-hidden="true">
+        <img src="img/cover-art.jpg" alt="Witch &amp; Wizard cover art" class="cover-art">
+        <span class="spark spark-one">+</span>
+        <span class="spark spark-two">+</span>
+        <span class="spark spark-three">+</span>
+      </div>
+    </section>
+
+    <!-- ══ DOWNLOAD ══ -->
+    <section class="play-section download-only-section" aria-labelledby="play-title">
+      <div class="download-fancy-container">
+        <div class="download-fancy-art reveal">
+          <div class="art-composition">
+            <img src="img/illustration_forest.png" alt="Magical Forest" class="comp-img comp-bg">
+            <img src="img/illustration_abilities.png" alt="Witch Abilities" class="comp-img comp-fg">
+            <div class="pc-badge"><span>Optimized for Windows</span></div>
+          </div>
+        </div>
+        <div class="download-fancy-content reveal">
+          <p class="eyebrow">The Definitive Edition</p>
+          <h2 id="play-title">Download for Windows</h2>
+          <p class="fancy-desc">Experience the magic at unlocked framerates and crisp resolutions. Built from the ground
+            up for PC gamers, this is the ultimate way to play.</p>
+          <ul class="download-features">
+            <li><strong>Native</strong> Windows 10 &amp; 11 Support</li>
+            <li><strong>Uncapped</strong> High refresh rate ready</li>
+            <li><strong>Inputs</strong> Mouse, Keyboard &amp; Any Gamepad</li>
+          </ul>
+          <a class="button button-primary snd-btn" onclick="window.location.href='https://www.dropbox.com/scl/fi/69x9y7wzwkcep7cm7xsu7/Witch-Wizard.zip?rlkey=62aw8rmzwqv5e1y4zc9t39sqe&st=qwht3dm3&dl=1'"
+            style="cursor: pointer;" tabindex="0" role="link">
+            <svg viewBox="0 0 87.3 87.3" width="18" height="18" fill="currentColor"
+              style="margin-right:10px;margin-bottom:2px">
+              <path
+                d="M0,12.4l35.6-4.9v35.8H0V12.4z M39.9,6.3L87.3,0v43.4H39.9V6.3z M39.9,47.6h47.4v43.4l-47.4-6.5V47.6z M0,47.6h35.6v35.8l-35.6-4.9V47.6z" />
+            </svg>
+            Download Free <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ STORY ══ -->
+    <section class="story-section" id="story" aria-labelledby="story-title">
+      <div class="story-copy reveal">
+        <p class="eyebrow">Enter the tower</p>
+        <h2 id="story-title">One missing friend.<br>One very strange tower.</h2>
+        <p>A young boy has been kidnapped by a Dark Sorceress. It is up to his best friend, a young Witch, to rescue him
+          &mdash; but it will not be easy.</p>
+        <p>More than 100 levels stand between the two. Solve them all and uncover what the Sorceress has truly planned.
+        </p>
+        <dl class="feature-list">
+          <div>
+            <dt class="count-up" data-target="100" data-suffix="+">0</dt>
+            <dd>Levels to conquer</dd>
+          </div>
+          <div>
+            <dt class="count-up" data-target="2">0</dt>
+            <dd>Local co-op mode</dd>
+          </div>
+          <div>
+            <dt class="count-up" data-target="0" data-prefix="$">$0</dt>
+            <dd>No cost, no ads</dd>
+          </div>
+        </dl>
+      </div>
+      <div class="trailer reveal" id="trailer">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/ysGd3KM1fNA" title="Witch &amp; Wizard official gameplay"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <p><span>Official gameplay</span><span>Press play</span></p>
+      </div>
+    </section>
+
+    <!-- ══ MECHANICS ══ -->
+    <section class="mechanics-section" aria-labelledby="mechanics-title">
+      <div class="mechanics-art reveal">
+        <img src="img/press/illustration_restart.png" alt="The Witch running past a checkpoint to retry a puzzle">
+      </div>
+      <div class="mechanics-copy reveal">
+        <p class="eyebrow">Built for PC &mdash; designed for everyone</p>
+        <h2 id="mechanics-title">Made to challenge you.<br>Not punish you.</h2>
+        <div class="mechanics-list">
+          <article>
+            <span>01</span>
+            <h3>Undo every move</h3>
+            <p>Rewind one move or 100. Experiment freely without restarting the whole puzzle.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Always evolving</h3>
+            <p>A fresh gameplay twist arrives every 5&ndash;10 levels, keeping the adventure surprising.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Cloud saves</h3>
+            <p>Your progress syncs automatically across devices. Pick up exactly where you left off.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Full controller support</h3>
+            <p>Play with keyboard &amp; mouse or plug in any controller. Xbox, PlayStation, generics all work.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ GALLERY ══ -->
+    <section class="gallery-section gallery-reimagined" id="gallery" aria-labelledby="gallery-title">
+      <div class="gallery-header reveal">
+        <div class="gallery-header-left">
+          <p class="eyebrow">Gameplay Showcase</p>
+          <h2 id="gallery-title">Every Room<br>Tells a Story</h2>
+        </div>
+        <div class="gallery-header-right">
+          <p>Each puzzle is a self-contained challenge. Move with intention, combine magical abilities, and find the one
+            path the Sorceress never expected.</p>
+          <div class="gallery-stat-row">
+            <div class="gallery-stat"><span class="gallery-stat-num">100<sup>+</sup></span><span>levels</span></div>
+            <div class="gallery-stat-divider"></div>
+            <div class="gallery-stat"><span class="gallery-stat-num">2</span><span>player</span></div>
+            <div class="gallery-stat-divider"></div>
+            <div class="gallery-stat"><span class="gallery-stat-num">0</span><span>cost</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="showcase-grid reveal">
+        <div class="showcase-card showcase-card--hero" tabindex="0" role="button" data-label="Epic Montage"
+          data-desc="Experience the full breadth of Witch &amp; Wizard's magical world in one breathtaking showcase."
+          data-video="videos/gameplay_montage.mp4">
+          <video autoplay loop muted playsinline class="showcase-video">
+            <source src="videos/gameplay_montage.mp4" type="video/mp4">
+          </video>
+          <div class="showcase-tag"><span class="tag-num">01</span><span class="tag-label">Montage</span></div>
+          <div class="showcase-caption">
+            <h3>Epic Montage</h3>
+            <p>Experience the full breadth of Witch &amp; Wizard's magical world in one breathtaking showcase.</p>
+          </div>
+          <span class="showcase-expand-hint" aria-hidden="true">click to expand</span>
+        </div>
+
+        <div class="showcase-stack">
+          <div class="showcase-card showcase-card--half" tabindex="0" role="button" data-label="Mind-Bending Magic"
+            data-desc="Layer abilities to unlock paths invisible at first glance."
+            data-video="videos/gameplay_basic.mp4">
+            <video autoplay loop muted playsinline class="showcase-video">
+              <source src="videos/gameplay_basic.mp4" type="video/mp4">
+            </video>
+            <div class="showcase-tag"><span class="tag-num">02</span><span class="tag-label">Spellwork</span></div>
+            <div class="showcase-caption">
+              <h3>Mind-Bending Magic</h3>
+              <p>Layer abilities to unlock paths invisible at first glance.</p>
+            </div>
+            <span class="showcase-expand-hint" aria-hidden="true">click to expand</span>
+          </div>
+
+          <div class="showcase-card showcase-card--half showcase-card--accent" tabindex="0" role="button"
+            data-label="Defy Gravity" data-desc="Turn the world upside down to reveal a path that was always there — just out of reach."
+            data-video="videos/gameplay_gravity.mp4">
+            <video autoplay loop muted playsinline class="showcase-video">
+              <source src="videos/gameplay_gravity.mp4" type="video/mp4">
+            </video>
+            <div class="showcase-tag"><span class="tag-num">03</span><span class="tag-label">Gravity Flip</span></div>
+            <div class="showcase-caption">
+              <h3>Defy Gravity</h3>
+              <p>Turn the world upside down to reveal a path that was always there — just out of reach.</p>
+            </div>
+            <span class="showcase-expand-hint" aria-hidden="true">click to expand</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-pills reveal" aria-hidden="true">
+        <div class="gallery-pill"><span class="pill-icon">↩</span><span class="pill-text">Undo any move</span></div>
+        <div class="gallery-pill gallery-pill--lit"><span class="pill-icon">⟳</span><span class="pill-text">New twist
+            every 5–10 levels</span></div>
+        <div class="gallery-pill"><span class="pill-icon">☁</span><span class="pill-text">Cloud saves</span></div>
+        <div class="gallery-pill"><span class="pill-icon">🎮</span><span class="pill-text">Any controller</span></div>
+      </div>
+    </section>
+
+    <!-- ══ FINAL CTA ══ -->
+    <section class="final-cta" id="download" aria-labelledby="cta-title">
+      <div class="final-art final-cover reveal" aria-hidden="true"><img src="img/cover-art.jpg" alt=""></div>
+      <div class="final-copy reveal">
+        <p class="eyebrow">Free &mdash; No strings attached</p>
+        <h2 id="cta-title">Start your adventure<br>today.</h2>
+        <p class="final-details">Download free for Windows. Includes singleplayer campaign, local co-op, full controller
+          support, and a 16-track original soundtrack.</p>
+        <div class="hero-actions">
+          <a class="button button-primary snd-btn" onclick="window.location.href='https://www.dropbox.com/scl/fi/69x9y7wzwkcep7cm7xsu7/Witch-Wizard.zip?rlkey=62aw8rmzwqv5e1y4zc9t39sqe&st=qwht3dm3&dl=1'"
+            style="cursor: pointer;" tabindex="0" role="link">Download Free <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Floating Download button -->
+  <a class="float-btn" id="floatBtn" onclick="window.location.href='https://www.dropbox.com/scl/fi/69x9y7wzwkcep7cm7xsu7/Witch-Wizard.zip?rlkey=62aw8rmzwqv5e1y4zc9t39sqe&st=qwht3dm3&dl=1'" style="cursor: pointer;"
+    tabindex="0" role="link" aria-label="Download Free">
+    <svg viewBox="0 0 87.3 87.3" width="18" height="18" fill="currentColor">
+      <path
+        d="M0,12.4l35.6-4.9v35.8H0V12.4z M39.9,6.3L87.3,0v43.4H39.9V6.3z M39.9,47.6h47.4v43.4l-47.4-6.5V47.6z M0,47.6h35.6v35.8l-35.6-4.9V47.6z" />
+    </svg>
+    <span>Free Download</span>
+  </a>
+
+  <!-- YouTube Trailer Lightbox -->
+  <div id="ytLightbox" role="dialog" aria-modal="true" aria-label="Trailer" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.96);align-items:center;justify-content:center;flex-direction:column;">
+    <button onclick="closeYTLightbox()" aria-label="Close" style="position:absolute;top:1.2rem;right:1.5rem;background:none;border:none;color:#fff;font-size:2.2rem;cursor:pointer;z-index:10001;line-height:1;opacity:0.85;">&#x2715;</button>
+    <div style="width:min(90vw,1100px);aspect-ratio:16/9;position:relative;">
+      <iframe id="ytFrame" src="" title="Witch &amp; Wizard official trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%;height:100%;border:none;border-radius:8px;"></iframe>
+    </div>
+    <p style="color:rgba(255,255,255,0.45);font-size:0.78rem;margin-top:1rem;letter-spacing:0.12em;text-transform:uppercase;">Press ESC to close</p>
+  </div>
+
+  <script>
+    function openYTLightbox(){
+      var lb=document.getElementById('ytLightbox');
+      document.getElementById('ytFrame').src='https://www.youtube.com/embed/NKCF1KgWLi8?autoplay=1&rel=0';
+      lb.style.display='flex';
+      document.body.style.overflow='hidden';
+    }
+    function closeYTLightbox(){
+      var lb=document.getElementById('ytLightbox');
+      document.getElementById('ytFrame').src='';
+      lb.style.display='none';
+      document.body.style.overflow='';
+    }
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')closeYTLightbox();});
+    document.getElementById('ytLightbox').addEventListener('click',function(e){if(e.target===this)closeYTLightbox();});
+  </script>
+
+  <!-- Video Lightbox -->
+  <div class="vid-lightbox" id="vidLightbox" role="dialog" aria-modal="true" aria-label="Gameplay video" hidden>
+    <div class="vid-lightbox-backdrop"></div>
+    <div class="vid-lightbox-inner">
+      <button class="vid-lightbox-close" aria-label="Close">&times;</button>
+      <div class="vid-lightbox-frame">
+        <video id="vidLightboxPlayer" loop muted playsinline controls></video>
+      </div>
+      <p class="vid-lightbox-label"><strong id="vidLightboxTitle"></strong><span id="vidLightboxDesc"></span></p>
+    </div>
+  </div>
+
+
+
+  <script>
+    (function () {
+      'use strict';
+
+      /* ── 2. SOUND EFFECTS ── */
+      const AudioCtx = window.AudioContext || window.webkitAudioContext;
+      let actx = null;
+
+      function ensureAudio() {
+        if (!actx) actx = new AudioCtx();
+        if (actx.state === 'suspended') actx.resume();
+      }
+
+      function playMagic(type) {
+        try {
+          ensureAudio();
+          const osc = actx.createOscillator();
+          const gain = actx.createGain();
+          osc.connect(gain);
+          gain.connect(actx.destination);
+
+          if (type === 'hover') {
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(660, actx.currentTime);
+            osc.frequency.exponentialRampToValueAtTime(880, actx.currentTime + 0.08);
+            gain.gain.setValueAtTime(0.06, actx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.001, actx.currentTime + 0.12);
+            osc.start();
+            osc.stop(actx.currentTime + 0.12);
+          } else {
+            osc.type = 'triangle';
+            osc.frequency.setValueAtTime(440, actx.currentTime);
+            osc.frequency.exponentialRampToValueAtTime(1320, actx.currentTime + 0.15);
+            gain.gain.setValueAtTime(0.12, actx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.001, actx.currentTime + 0.22);
+            osc.start();
+            osc.stop(actx.currentTime + 0.22);
+          }
+        } catch (e) { }
+      }
+
+      // Hover sound on buttons
+      document.querySelectorAll('.snd-btn').forEach(btn => {
+        btn.addEventListener('mouseenter', () => playMagic('hover'));
+        btn.addEventListener('click', () => playMagic('click'));
+      });
+
+      /* ── 3. PARALLAX HERO ── */
+      const heroBg = document.getElementById('heroBgParallax');
+      const heroArt = document.getElementById('heroArt');
+
+      function onScroll() {
+        const y = window.scrollY;
+        if (heroBg) heroBg.style.transform = `translateY(${y * 0.35}px)`;
+        if (heroArt) heroArt.style.transform = `translateY(${y * 0.12}px)`;
+
+        /* ── 4. STICKY HEADER shrink ── */
+        const hdr = document.getElementById('siteHeader');
+        if (y > 80) hdr.classList.add('header-scrolled');
+        else hdr.classList.remove('header-scrolled');
+
+        /* ── 5. FLOATING BUTTON ── */
+        const fb = document.getElementById('floatBtn');
+        if (y > 400) fb.classList.add('float-btn--visible');
+        else fb.classList.remove('float-btn--visible');
+      }
+
+      window.addEventListener('scroll', onScroll, { passive: true });
+
+      /* ── 6. COUNT-UP NUMBERS ── */
+      function countUp(el) {
+        const target = parseInt(el.dataset.target, 10);
+        const suffix = el.dataset.suffix || '';
+        const prefix = el.dataset.prefix || '';
+        if (target === 0) { el.textContent = prefix + '0' + suffix; return; }
+        const dur = 1400;
+        const step = 16;
+        const inc = target / (dur / step);
+        let cur = 0;
+        const t = setInterval(() => {
+          cur += inc;
+          if (cur >= target) { cur = target; clearInterval(t); }
+          el.textContent = prefix + Math.floor(cur) + suffix;
+        }, step);
+      }
+
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            countUp(entry.target);
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+
+      document.querySelectorAll('.count-up').forEach(el => io.observe(el));
+
+      /* ── 7. GALLERY LIGHTBOX ── */
+      const lb = document.getElementById('vidLightbox');
+      const player = document.getElementById('vidLightboxPlayer');
+      const lbTitle = document.getElementById('vidLightboxTitle');
+      const lbDesc = document.getElementById('vidLightboxDesc');
+      const lbClose = lb.querySelector('.vid-lightbox-close');
+      const lbBd = lb.querySelector('.vid-lightbox-backdrop');
+
+      function lbOpen(card) {
+        player.src = card.dataset.video || '';
+        lbTitle.textContent = card.dataset.label || '';
+        lbDesc.textContent = card.dataset.desc || '';
+        lb.hidden = false;
+        document.body.classList.add('lb-open');
+        player.play().catch(() => { });
+        lbClose.focus();
+        playMagic('click');
+      }
+      function lbClose2() {
+        lb.hidden = true;
+        document.body.classList.remove('lb-open');
+        player.pause(); player.src = '';
+      }
+
+      document.querySelectorAll('.showcase-card').forEach(card => {
+        card.addEventListener('click', () => lbOpen(card));
+        card.addEventListener('keydown', e => {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); lbOpen(card); }
+        });
+      });
+      lbClose.addEventListener('click', lbClose2);
+      lbBd.addEventListener('click', lbClose2);
+      document.addEventListener('keydown', e => { if (e.key === 'Escape' && !lb.hidden) lbClose2(); });
+
+
+    })();
+  </script>
+</body>
+
+</html>
